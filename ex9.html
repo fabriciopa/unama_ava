@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <title>Demonstração Vue.js</title>
+</head>
+
+<body>
+    <script src="https://unpkg.com/vue@3"></script>
+
+    <div id="app">
+        <button @click="count++">
+            Contagem: {{ count }}
+        </button>
+    </div>
+
+    <script>
+        const { createApp } = Vue
+
+        createApp({
+            data() {
+                return {
+                    count: 0
+                }
+            }
+        }).mount('#app')
+    </script>
+</body>
+
+</html>
